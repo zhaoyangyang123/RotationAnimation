@@ -16,6 +16,7 @@
 		237939971E24AA020016907C /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 237939961E24AA020016907C /* FirstViewController.m */; };
 		23C6B2231E24A79D007CD0A1 /* 刷新@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C6B2211E24A79D007CD0A1 /* 刷新@2x.png */; };
 		23C6B2241E24A79D007CD0A1 /* 刷新@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C6B2221E24A79D007CD0A1 /* 刷新@3x.png */; };
+		46C20F2CCC1384765782B482 /* libPods-RotationAnimationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C171815E397F031BB567BD99 /* libPods-RotationAnimationDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,9 @@
 		237939961E24AA020016907C /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		23C6B2211E24A79D007CD0A1 /* 刷新@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刷新@2x.png"; sourceTree = "<group>"; };
 		23C6B2221E24A79D007CD0A1 /* 刷新@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "刷新@3x.png"; sourceTree = "<group>"; };
+		25C684B77A4F1053A50DBB55 /* Pods-RotationAnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RotationAnimationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RotationAnimationDemo/Pods-RotationAnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		48D94B6B71BD967B8EB7147A /* Pods-RotationAnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RotationAnimationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RotationAnimationDemo/Pods-RotationAnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C171815E397F031BB567BD99 /* libPods-RotationAnimationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RotationAnimationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +44,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C20F2CCC1384765782B482 /* libPods-RotationAnimationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A69CB27C68209FFE36BA8EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25C684B77A4F1053A50DBB55 /* Pods-RotationAnimationDemo.debug.xcconfig */,
+				48D94B6B71BD967B8EB7147A /* Pods-RotationAnimationDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2336BBD51E248421005056B5 = {
 			isa = PBXGroup;
 			children = (
 				2336BBE01E248422005056B5 /* RotationAnimationDemo */,
 				2336BBDF1E248422005056B5 /* Products */,
+				0A69CB27C68209FFE36BA8EB /* Pods */,
+				E4838D182A6E247CBCF06798 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +106,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E4838D182A6E247CBCF06798 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C171815E397F031BB567BD99 /* libPods-RotationAnimationDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2336BBF51E248422005056B5 /* Build configuration list for PBXNativeTarget "RotationAnimationDemo" */;
 			buildPhases = (
+				C0C80328EC276CE350429FA4 /* [CP] Check Pods Manifest.lock */,
 				2336BBDA1E248422005056B5 /* Sources */,
 				2336BBDB1E248422005056B5 /* Frameworks */,
 				2336BBDC1E248422005056B5 /* Resources */,
+				3D6A8C4C7ED4C37A25E72416 /* [CP] Embed Pods Frameworks */,
+				2290F7A6E014103B7E854308 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +185,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2290F7A6E014103B7E854308 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RotationAnimationDemo/Pods-RotationAnimationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D6A8C4C7ED4C37A25E72416 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RotationAnimationDemo/Pods-RotationAnimationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0C80328EC276CE350429FA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RotationAnimationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2336BBDA1E248422005056B5 /* Sources */ = {
@@ -285,6 +363,7 @@
 		};
 		2336BBF61E248422005056B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C684B77A4F1053A50DBB55 /* Pods-RotationAnimationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VB6M4S6PGL;
@@ -297,6 +376,7 @@
 		};
 		2336BBF71E248422005056B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D94B6B71BD967B8EB7147A /* Pods-RotationAnimationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VB6M4S6PGL;
